@@ -91,6 +91,8 @@ public class MyString {
     {
         if(str=="")
         return "";
+        if(str.length()==1)
+        return str;
         String space="";
         int r=0;
         for(int i=0;i<str.length()-1;i++)
