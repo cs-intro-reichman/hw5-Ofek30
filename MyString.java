@@ -80,7 +80,7 @@ public class MyString {
         space=space+str.charAt(i)+" ";
         r=i;
         }
-        space=space+str.charAt(r);
+        space=space+str.charAt(r+1);
 
         //// Replace the following statement with your code
         return space;
