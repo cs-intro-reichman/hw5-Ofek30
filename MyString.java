@@ -90,13 +90,13 @@ public class MyString {
     public static String spacedString(String str) 
     {
         String space="";
-        int r=0;
-        for(int i=0;i<str.length()-1;i++)
+       
+        for(int i=0;i<str.length();i++)
         {
-        space=space+str.charAt(i)+" ";
-        r++;
+        space=space+" "+str.charAt(i);
+     
         }
-        space=space+str.charAt(r);
+     
 
         //// Replace the following statement with your code
         return space;
