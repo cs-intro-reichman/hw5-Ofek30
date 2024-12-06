@@ -124,6 +124,7 @@
 			{
 				if(input.equals("."))
 				break;
+				System.out.println("Invalid word.Try again.");
 				input=in.readString();
 				
 			}
@@ -136,6 +137,7 @@
 			{
 				if(input.equals("."))
 				break;
+				System.out.println("Invalid word.Try again.");
 				input=in.readString();
 				hand=MyString.remove(hand, input);
 			}
@@ -145,7 +147,8 @@
 			score=wordScore(input);
 			totalScore +=score;
 			
-			System.out.println(input+" -> score: "+score);
+			System.out.println(input + " earned " + score + " points. Score: " + totalScore + " points");
+			System.out.println("");
 
 		}
 		if (hand.length() == 0) {
