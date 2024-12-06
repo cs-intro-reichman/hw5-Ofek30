@@ -10,6 +10,7 @@ public class MyString {
         System.out.println(countChar(hello, 'z'));
         System.out.println(spacedString("hello"));
         System.out.println(subsetOf("pass","space" ));
+        System.out.println(subsetOf("pas","space" ));
         System.out.println(randomStringOfLetters(6));
         System.out.println(remove("meet","committee"));
         //// Put your other tests here.
@@ -48,17 +49,32 @@ public class MyString {
      */
     public static boolean subsetOf(String str1, String str2) 
     {
+        boolean found=false;
+
         if(str1.equals(""))
         return true;
-        char[] arr1=StringArray(str1);
 
-        for(int i=0;i<arr1.length;i++)
+
+        for (int i = 0; i < str1.length(); i++) 
         {
-            if(str2.indexOf(arr1[i]) != -1)
+            char c1 = str1.charAt(i);
+
+           found = false;
+            for (int j = 0; j < str2.length(); j++) 
+            {
+                if (c1 == str2.charAt(j)) 
+                {
+                    str2 = str2.substring(0, j) + str2.substring(j + 1);  
+                    found = true;
+                    break;
+                }
+            }
+            if(!found)
             return false;
         }
-        
-        return true;
+
+            
+            return true;
 
          
     }
@@ -75,12 +91,12 @@ public class MyString {
     {
         String space="";
         int r=0;
-        for(int i=0;i<str.length()-1;i++)
+        for(int i=0;i<str.length();i++)
         {
         space=space+str.charAt(i)+" ";
         r=i;
         }
-        space=space+str.charAt(r+1);
+        space=space+str.charAt(r);
 
         //// Replace the following statement with your code
         return space;
