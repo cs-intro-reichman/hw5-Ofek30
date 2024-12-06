@@ -124,7 +124,7 @@
 			{
 				if(input.equals("."))
 				break;
-				System.out.println("Invalid word.Try again.");
+				System.out.println("Invalid word. Try again.");
 				System.out.println("Current Hand: " + MyString.spacedString(hand));
 			System.out.println("Enter a word, or '.' to finish playing this hand:");
 				input=in.readString();
@@ -139,7 +139,7 @@
 			{
 				if(input.equals("."))
 				break;
-				System.out.println("Invalid word.Try again.");
+				System.out.println("Invalid word. Try again.");
 				System.out.println("Current Hand: " + MyString.spacedString(hand));
 			System.out.println("Enter a word, or '.' to finish playing this hand:");
 				input=in.readString();
