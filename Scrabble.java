@@ -145,7 +145,7 @@
 			score=wordScore(input);
 			totalScore +=score;
 			
-			System.out.println(input + " earned " + score + " points. Score: " + totalScore + " points");
+			System.out.println(input+" -> score: "+score);
 
 		}
 		if (hand.length() == 0) {
