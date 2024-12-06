@@ -91,10 +91,10 @@ public class MyString {
     {
         String space="";
         int r=0;
-        for(int i=0;i<str.length();i++)
+        for(int i=0;i<str.length()-1;i++)
         {
         space=space+str.charAt(i)+" ";
-        r=i;
+        r++;
         }
         space=space+str.charAt(r);
 
