@@ -74,12 +74,12 @@
 			 
 			 while(word.charAt(i)!=alphabet.charAt(r))
 			 {
-				 r++;
-				 
+				 r++; 
 			 }
 			 score=score+SCRABBLE_LETTER_VALUES[r];
 			 r=0;
 		 }
+		 score=score*word.length();
 		 if(word.contains("runi"))
 		 score=score+1000;
 		 if(word.length()==HAND_SIZE)
@@ -171,7 +171,6 @@
 			 playHand(createHand());
 			 else if(input.equals("e"))
 			 {
-			 System.out.println("Game Over");
 			 break;
 			 }
 			 else
