@@ -10,7 +10,7 @@ public class MyString {
         System.out.println(countChar(hello, 'z'));
         System.out.println(spacedString("hello"));
         System.out.println(subsetOf("pass","space" ));
-        System.out.println(subsetOf("pas","space" ));
+        System.out.println(subsetOf("runi","cat" ));
         System.out.println(randomStringOfLetters(6));
         System.out.println(remove("meet","committee"));
         //// Put your other tests here.
