@@ -124,7 +124,6 @@
 			{
 				if(input.equals("."))
 				break;
-				System.out.println("No muy bien necesito mas palabra");
 				input=in.readString();
 				
 			}
@@ -137,7 +136,6 @@
 			{
 				if(input.equals("."))
 				break;
-				System.out.println("No muy bien necesito mas palabra");
 				input=in.readString();
 				hand=MyString.remove(hand, input);
 			}
