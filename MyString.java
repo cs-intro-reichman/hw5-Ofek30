@@ -48,11 +48,13 @@ public class MyString {
      */
     public static boolean subsetOf(String str1, String str2) 
     {
-        char[] arr2=StringArray(str2);
+        if(str1.equals(""))
+        return true;
+        char[] arr1=StringArray(str1);
 
-        for(int i=0;i<arr2.length;i++)
+        for(int i=0;i<arr1.length;i++)
         {
-            if(!str1.contains(String.valueOf(arr2[i])))
+            if(!str2.contains(String.valueOf(arr1[i])))
             return false;
         }
         
@@ -125,7 +127,7 @@ public static char[] StringArray(String str)
      */
     public static String remove(String str1, String str2) 
     {
-        if(subsetOf(str1, str2)==false)
+        if(subsetOf(str2, str1)==false)
         return str1;
         char[] arr1=StringArray(str2);
         char[] arr2=StringArray(str1);
