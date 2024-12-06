@@ -9,7 +9,7 @@ public class MyString {
         System.out.println(countChar(hello, 'l'));
         System.out.println(countChar(hello, 'z'));
         System.out.println(spacedString("hello"));
-        System.out.println(subsetOf(hello,"hell" ));
+        System.out.println(subsetOf("pass","space" ));
         System.out.println(randomStringOfLetters(6));
         System.out.println(remove("meet","committee"));
         //// Put your other tests here.
@@ -54,7 +54,7 @@ public class MyString {
 
         for(int i=0;i<arr1.length;i++)
         {
-            if(!str2.contains(String.valueOf(arr1[i])))
+            if(str2.indexOf(arr1[i]) != -1)
             return false;
         }
         
