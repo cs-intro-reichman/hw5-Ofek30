@@ -80,8 +80,8 @@
 			 r=0;
 		 }
 		 score=score*word.length();
-		 if(word.contains("runi"))
-		 score=score+1000;
+		 if(MyString.subsetOf("runi",word)==true)
+		 score +=1000;
 		 if(word.length()==HAND_SIZE)
 		 score=score+50;
  
@@ -183,7 +183,8 @@
  
 	 public static void main(String[] args) 
 	 {
-		 playGame();
+		 //playGame();
+		 System.out.println(MyString.subsetOf("runi","word"));
 		 //// Uncomment the test you want to run
 		 ////testBuildingTheDictionary();  
 		 ////testScrabbleScore();    
