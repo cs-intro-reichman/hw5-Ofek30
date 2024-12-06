@@ -68,7 +68,7 @@
 	 public static int wordScore(String word) 
 	 {
 		 int score=0,r=0;
-		 String alphabet="abcdefghijklmnopqrstyvwxyz";
+		 String alphabet="abcdefghijklmnopqrstuvwxyz";
 		 for(int i=0;i<word.length();i++)
 		 {
 			 
