@@ -10,7 +10,7 @@ public class MyString {
         System.out.println(countChar(hello, 'z'));
         System.out.println(spacedString("hello"));
         System.out.println(subsetOf("pass","space" ));
-        System.out.println(subsetOf("runi","cat" ));
+        System.out.println(subsetOf("runi","running" ));
         System.out.println(randomStringOfLetters(6));
         System.out.println(remove("meet","committee"));
         //// Put your other tests here.
@@ -89,14 +89,13 @@ public class MyString {
      */
     public static String spacedString(String str) 
     {
-        String space=" ";
-        int r=0;
-        for(int i=0;i<str.length()-1;i++)
+        if(str=="")
+        return " ";
+        String space="";
+        for(int i=0;i<str.length();i++)
         {
-        space=space+str.charAt(i)+" ";
-        r++;
+        space=space+" "+str.charAt(i);
         }
-        space=space+str.charAt(r);
 
         //// Replace the following statement with your code
         return space;
